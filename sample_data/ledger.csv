@@ -1,0 +1,21 @@
+date,reference,description,amount
+2026-09-01,DEP-0901,Customer payment - Northwind Traders,4250.00
+2026-09-02,1041,Rent - Harbor Properties,-3200.00
+2026-09-03,ACH-5521,Payroll - Gusto,-12480.55
+2026-09-04,1042,Office supplies - Staples,-186.40
+2026-09-05,DEP-0905,Customer payment - Contoso Ltd,2875.00
+2026-09-08,1043,Consulting - Rivera & Co,-1245.00
+2026-09-09,ACH-5530,Software - Adobe,-89.99
+2026-09-10,1044,Utilities - City Power,-412.37
+2026-09-11,DEP-0911,Customer payment - Fabrikam (wire),6100.00
+2026-09-12,1045,Insurance - Liberty Mutual,-980.00
+2026-09-15,ACH-5544,Vendor payment - Acme Supplies,-2340.00
+2026-09-15,ACH-5544,Vendor payment - Acme Supplies,-2340.00
+2026-09-16,DEP-0916,Customer payment - Tailspin Toys,1500.00
+2026-09-18,ACH-5560,Freight - FastShip Logistics,-318.25
+2026-09-20,1049,Catering - Blue Plate,-264.80
+2026-09-22,DEP-0922,Customer payment - Northwind Traders,3300.00
+2026-09-24,1047,Equipment repair - TechFix,-625.00
+2026-09-25,ACH-5571,Payroll - Gusto,-12480.55
+2026-09-28,1048,Legal fees - Kim & Partners,-2100.00
+2026-09-30,DEP-0930,Customer payment - Contoso Ltd,5400.00

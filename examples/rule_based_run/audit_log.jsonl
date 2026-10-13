@@ -1,0 +1,24 @@
+{"ts": "2026-10-13T20:32:26+00:00", "event": "run_created", "inputs": {"ledger": {"path": "sample_data/ledger.csv", "sha256": "5274e78fbcd6960f8859251bb571641e55f2191e060424e74f0f3ad0ce543722"}, "statement": {"path": "sample_data/statement.csv", "sha256": "f868d14e0fcc7938344cbac9f048572bbafe484264898b7c65b012bcb767d724"}}, "matches": 15, "exceptions": 9}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "ai_proposal", "exception_id": "EX-001", "author": "rules:v1", "action": "correct_ledger_amount", "confidence": "medium"}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "ai_proposal", "exception_id": "EX-002", "author": "rules:v1", "action": "record_bank_item_in_ledger", "confidence": "medium"}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "ai_proposal", "exception_id": "EX-003", "author": "rules:v1", "action": "reverse_duplicate_entry", "confidence": "medium"}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "ai_proposal", "exception_id": "EX-004", "author": "rules:v1", "action": "record_bank_item_in_ledger", "confidence": "medium"}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "ai_proposal", "exception_id": "EX-005", "author": "rules:v1", "action": "confirm_match", "confidence": "medium"}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "ai_proposal", "exception_id": "EX-006", "author": "rules:v1", "action": "timing_difference_no_action", "confidence": "low"}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "ai_proposal", "exception_id": "EX-007", "author": "rules:v1", "action": "timing_difference_no_action", "confidence": "low"}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "ai_proposal", "exception_id": "EX-008", "author": "rules:v1", "action": "record_bank_item_in_ledger", "confidence": "medium"}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "ai_proposal", "exception_id": "EX-009", "author": "rules:v1", "action": "record_bank_item_in_ledger", "confidence": "medium"}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "ai_summary_draft", "author": "rules:v1", "chars": 841}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "agent_finished", "mode": "rules", "model": null, "finished_at": "2026-10-13T20:32:26+00:00"}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "review_session_started", "reviewer": "Demo Reviewer"}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "human_decision", "exception_id": "EX-001", "reviewer": "Demo Reviewer", "decision": "accepted", "action": "correct_ledger_amount", "ai_action": "correct_ledger_amount", "note": ""}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "human_decision", "exception_id": "EX-002", "reviewer": "Demo Reviewer", "decision": "accepted", "action": "record_bank_item_in_ledger", "ai_action": "record_bank_item_in_ledger", "note": ""}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "human_decision", "exception_id": "EX-003", "reviewer": "Demo Reviewer", "decision": "accepted", "action": "reverse_duplicate_entry", "ai_action": "reverse_duplicate_entry", "note": ""}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "human_decision", "exception_id": "EX-004", "reviewer": "Demo Reviewer", "decision": "overridden", "action": "investigate_further", "ai_action": "record_bank_item_in_ledger", "note": "NSF on Contoso deposit L-005; confirm with AR before booking"}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "human_decision", "exception_id": "EX-005", "reviewer": "Demo Reviewer", "decision": "accepted", "action": "confirm_match", "ai_action": "confirm_match", "note": ""}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "human_decision", "exception_id": "EX-006", "reviewer": "Demo Reviewer", "decision": "accepted", "action": "timing_difference_no_action", "ai_action": "timing_difference_no_action", "note": ""}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "human_decision", "exception_id": "EX-007", "reviewer": "Demo Reviewer", "decision": "escalated", "action": "escalated", "ai_action": "timing_difference_no_action", "note": "AR to confirm deposit slip"}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "human_decision", "exception_id": "EX-008", "reviewer": "Demo Reviewer", "decision": "accepted", "action": "record_bank_item_in_ledger", "ai_action": "record_bank_item_in_ledger", "note": ""}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "human_decision", "exception_id": "EX-009", "reviewer": "Demo Reviewer", "decision": "accepted", "action": "record_bank_item_in_ledger", "ai_action": "record_bank_item_in_ledger", "note": ""}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "summary_approved", "reviewer": "Demo Reviewer", "edited": false, "warnings": 1, "ack_note": "Override reflected in decision table"}
+{"ts": "2026-10-13T20:32:26+00:00", "event": "finalized", "reviewer": "Demo Reviewer", "agreement": "7/9 (78%)", "open_items": 2}

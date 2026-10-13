@@ -1,0 +1,16 @@
+ledger_id,statement_id,rule,date_diff_days,description_similarity
+L-002,S-003,reference+amount,3,0.125
+L-004,S-005,reference+amount,3,0.121
+L-008,S-010,reference+amount,4,0.133
+L-015,S-016,reference+amount,4,0.207
+L-010,S-012,reference+amount,5,0.118
+L-017,S-019,reference+amount,5,0.176
+L-001,S-001,amount+date,0,1.0
+L-003,S-002,amount+date,0,1.0
+L-005,S-004,amount+date,0,1.0
+L-009,S-008,amount+date,0,1.0
+L-018,S-017,amount+date,0,1.0
+L-007,S-006,amount+date,0,0.526
+L-011,S-011,amount+date,1,1.0
+L-016,S-015,amount+date,1,1.0
+L-013,S-014,amount+date,3,1.0
