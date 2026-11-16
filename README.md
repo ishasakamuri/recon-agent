@@ -33,9 +33,20 @@ statement.csv┘   matching engine                (tools)         └─> summar
 
 ## Quick start
 
+Set your API key (or skip this and add `--no-llm` to `run`):
+
+```bash
+export ANTHROPIC_API_KEY=sk-ant-...        # macOS / Linux
+```
+
+```powershell
+$env:ANTHROPIC_API_KEY = "sk-ant-..."      # Windows PowerShell (current window only)
+```
+
+Then, on any platform:
+
 ```bash
 pip install -r requirements.txt
-export ANTHROPIC_API_KEY=sk-ant-...        # or omit and use --no-llm
 
 python reconcile.py run --ledger sample_data/ledger.csv --statement sample_data/statement.csv --out runs/sep
 python reconcile.py status --run runs/sep
@@ -45,6 +56,8 @@ python -m unittest discover -s tests -t .
 ```
 
 Review is resumable. Quit at any point, and decisions made so far are saved.
+Review ends by asking whether to finalize. Answering `y` finalizes the run then
+and there, so you only need the separate `finalize` command if you answered `n`.
 
 The loader accepts common header variants (`Posting Date`, `Debit`/`Credit`,
 `Memo`, `Check No`, ...), several date formats, and `$1,254.00` / `(35.00)` /
